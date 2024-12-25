@@ -1,0 +1,47 @@
+.icon-star-container {
+    width: 2.5em;
+    height: 2.5em;
+    background: var(--dark-blue);
+    border-radius: 30px;
+}
+
+.icon-star {
+    max-width: 100%;
+}
+
+.thank-you-img-container {
+    width: 144px;
+    height: 96px;
+}
+
+.card {
+    /* width: 40%; */
+    max-width: 25.75rem;
+    /* height: 21.5rem; */
+    padding: 1.5rem;
+    background: linear-gradient(#232A34, #181E27);
+    border-radius: 0.938rem;
+    gap: 1.063rem;
+}
+
+.card-body {
+    gap: 1.063rem;
+    margin-bottom: 0.438rem;
+}
+
+.card-title {
+    color: #fff;
+    font-weight: 700;
+    /* font-size: calc(1.50rem + 3vw); */
+    font-size: 1.75rem;
+}
+
+.thank-you-card {
+    padding: 2.125rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+

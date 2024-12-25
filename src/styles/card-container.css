@@ -45,3 +45,12 @@
     gap: 3rem;
 }
 
+.rate-value-container {
+    /* max-width: 10.5rem; */
+    padding: 0.313rem 0.75rem;
+    border-radius: 22.5px;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    font-size: 0.875rem;
+    text-align: center;
+}

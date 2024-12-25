@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+@import url('./form.css');
 
 :root {
     --very-dark-blue: hsl(216, 12%, 8%);
@@ -35,7 +36,7 @@ body {
     width: 100%;
     background-color: var(--very-dark-blue);
     font-family: var(--font);
-    font-size: 0.88rem;
+    font-size: 0.938rem;
     color: var(--light-grey);
     line-height: 22px;
 }
@@ -52,8 +53,7 @@ main {
 }
 
 .icon-star {
-    width: 13.96px;
-    height: 13.96px;
+    max-width: 100%;
 }
 
 .thank-you-img {
@@ -62,15 +62,16 @@ main {
 }
 
 .card {
-    width: 20.438rem;
-    height: 21.5rem;
+    width: 40%;
+    max-width: 25.75rem;
+    /* height: 21.5rem; */
     padding: 1.5rem;
     background: linear-gradient(#232A34, #181E27);
     border-radius: 0.938rem;
     gap: 1.063rem;
 }
 
-.card-body, .fieldset {
+.card-body {
     gap: 1.063rem;
     margin-bottom: 0.438rem;
 }
@@ -78,34 +79,17 @@ main {
 .card-title {
     color: #fff;
     font-weight: 700;
-    font-size: 1.50rem;
+    /* font-size: calc(1.50rem + 3vw); */
+    font-size: 1.75rem;
 }
 
-.fieldset {
-    justify-content: space-between;
-}
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp 
 
-.radio {
-    width: 2.625em;
-    height: 2.625em;
-    background: var(--dark-blue);
-    border-radius: 30px;
-}
+Might be useful ^
+*/
 
-.radio-text {
-    line-height: 24px;
-    letter-spacing: 0.17px;
-}
 
-.submit-btn {
-    width: 17.438rem;
-    height: 2.813rem;
-    border-style: none;
-    border-radius: 1.375rem;
-    background: var(--orange);
+/* https://cursos.alura.com.br/forum/topico-botao-radio-155239
 
-    color: var(--very-dark-blue);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.117em;
-}
+seems more useful ^
+*/

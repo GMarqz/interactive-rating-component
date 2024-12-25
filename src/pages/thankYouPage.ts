@@ -30,6 +30,7 @@ export default function renderTYPage(formElement: HTMLFormElement, rateValue: nu
 
 function selectedValueDisplay(parentElement: HTMLDivElement, rateValue: number): HTMLDivElement {
     const $container = document.createElement("div") as HTMLDivElement;
+    $container.className = "rate-value-container";
     const $rateValueText = document.createElement("p") as HTMLParagraphElement;
     $rateValueText.className = "rate-value-text";
     $rateValueText.textContent = `You selected ${rateValue} out of 5`;

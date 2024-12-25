@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+@import url('./card-container.css');
+@import url('./form.css');
+
+:root {
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --card-color: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --orange: #FC7614;
+    --light-grey: hsl(217, 12%, 63%);
+
+    --font: "Overpass", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-direction-col {
+    flex-direction: column;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--very-dark-blue);
+    font-family: var(--font);
+    font-size: 0.938rem;
+    color: var(--light-grey);
+    line-height: 22px;
+}
+
+/* main {
+    margin: 9.625em 1.5em;
+} */
+
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp 
+
+Might be useful ^
+*/
+
+
+/* https://cursos.alura.com.br/forum/topico-botao-radio-155239
+
+seems more useful ^
+*/

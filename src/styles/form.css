@@ -2,6 +2,8 @@
 Useful resource ^
 */
 
+/* https://www.w3schools.com/howto/howto_css_transition_hover.asp */
+
 .form {
     display: flex;
     flex-direction: column;
@@ -13,34 +15,59 @@ Useful resource ^
     flex-direction: row;
     /* justify-content: space-between; */
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.radio {
+.radio-container {
+    position: relative;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 25px; */
+    /* width: 50px; */
+    background-color: var(--dark-blue);
+    border: 12px solid var(--dark-blue);
+    border-radius: 50%;
+}
+
+/* .radio {
     width: 2.625rem;
     height: 2.625rem;
     appearance: none;
     border-radius: 50%;
-    /* padding: 2rem; */
     background-color: var(--dark-blue);
-}
+} */
 
 .radio:hover{
     cursor: pointer;
     background-color: var(--orange);
 }
 
-span {
-    position: absolute;
-    bottom: 40px;
-    left: 25px;
+.checkmark {
+    position: relative;
     font-weight: 700;
     pointer-events: none;
 }
 
-span:hover {
+.checkmark:hover {
     cursor: pointer;
 }
+
+/* .checkmark-one {
+    left: 14%;
+    bottom: 15%;
+} */
 
 .submit-btn {
     width: 100%;

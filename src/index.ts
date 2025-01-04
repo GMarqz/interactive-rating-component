@@ -6,4 +6,5 @@ $form.addEventListener("submit", (e: Event) => {
     e.preventDefault();
     console.log("Listening");
     renderTYPage($form, 4);
-})
+});
+

@@ -18,7 +18,7 @@ Useful resource ^
     gap: 2rem;
 }
 
-.radio-container {
+/* .radio-container {
     position: relative;
 }
 
@@ -28,7 +28,7 @@ Useful resource ^
     cursor: pointer;
     height: 0;
     width: 0;
-}
+} */
 
 .checkmark {
     position: absolute;
@@ -54,7 +54,7 @@ Useful resource ^
     background-color: var(--orange);
 }
 
-.checkmark {
+/* .checkmark {
     position: relative;
     font-weight: 700;
     pointer-events: none;
@@ -62,7 +62,7 @@ Useful resource ^
 
 .checkmark:hover {
     cursor: pointer;
-}
+} */
 
 /* .checkmark-one {
     left: 14%;
@@ -84,4 +84,63 @@ Useful resource ^
 
 .submit-btn:hover {
     cursor: pointer;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+/* -----------------------------PROTOTYPES-------------------------------- */
+
+.rate-btn {
+    width: 51px;
+    height: 51px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    padding-left: 5px;
+    padding-top: 2px;
+
+    cursor: pointer;
+}
+
+.rate-btn::after {
+    background-color: var(--orange);
+}
+
+.radio {
+    /* appearance: none; */
+    opacity: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    /* z-index: -1; */
+
+}
+
+.radio:checked {
+    /* width: 100px;
+    height: 100px; */
+    background-color: var(--orange);
+}  
+
+.radio-container {
+    position: relative;
+    left: 15px;
+
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    align-self: center;
+    text-align: center;
 }

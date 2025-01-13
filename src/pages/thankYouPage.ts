@@ -1,4 +1,4 @@
-export default function renderTYPage(formElement: HTMLFormElement, rateValue: number): HTMLDivElement {
+export default function renderTYPage(formElement: HTMLFormElement, rateValue: string): HTMLDivElement {
     formElement.remove();
 
     const $card = document.getElementById("card") as HTMLDivElement;
@@ -28,7 +28,7 @@ export default function renderTYPage(formElement: HTMLFormElement, rateValue: nu
     return $card;
 }
 
-function selectedValueDisplay(parentElement: HTMLDivElement, rateValue: number): HTMLDivElement {
+function selectedValueDisplay(parentElement: HTMLDivElement, rateValue: string): HTMLDivElement {
     const $container = document.createElement("div") as HTMLDivElement;
     $container.className = "rate-value-container";
     const $rateValueText = document.createElement("p") as HTMLParagraphElement;

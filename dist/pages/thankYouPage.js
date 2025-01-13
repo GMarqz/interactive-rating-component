@@ -1,14 +1,14 @@
 export default function renderTYPage(formElement, rateValue) {
     formElement.remove();
     const $card = document.getElementById("card");
-    $card.className = "thank-you-card card";
+    $card.className = "thank-you-card card d-flex flex-direction-col justify-content-center align-items-center";
     const $iconStarContainer = document.querySelector(".icon-star-container");
     $iconStarContainer.className = "thank-you-img-container";
     const $iconStar = document.querySelector(".icon-star");
     $iconStar.src = "../src/images/illustration-thank-you.svg";
     $iconStar.className = "thank-you-img";
     const $cardBody = document.querySelector(".card-body");
-    $cardBody.classList.add("ai-center", "jc-center");
+    $cardBody.classList.add("align-items-center", "justify-content-center");
     const $cardTitle = document.querySelector(".card-title");
     $cardTitle.textContent = "Thank you!";
     const $cardText = document.querySelector(".card-text");
@@ -20,7 +20,7 @@ export default function renderTYPage(formElement, rateValue) {
 }
 function selectedValueDisplay(parentElement, rateValue) {
     const $container = document.createElement("div");
-    $container.className = "rate-value-container";
+    $container.className = "rate-value-container text-center";
     const $rateValueText = document.createElement("p");
     $rateValueText.className = "rate-value-text";
     $rateValueText.textContent = `You selected ${rateValue} out of 5`;

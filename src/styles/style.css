@@ -8,6 +8,7 @@
     --dark-blue: hsl(213, 19%, 18%);
     --orange: #FC7614;
     --light-grey: hsl(217, 12%, 63%);
+    --white: #fff;
 
     --font: "Overpass", sans-serif;
 }
@@ -20,15 +21,15 @@
     display: flex;
 }
 
-.f-direction-col {
+.flex-direction-col {
     flex-direction: column;
 }
 
-.ai-center {
+.align-items-center {
     align-items: center;
 }
 
-.jc-center {
+.justify-content-center {
     justify-content: center;
 }
 
@@ -37,6 +38,9 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
     background-color: var(--very-dark-blue);
@@ -46,18 +50,7 @@ body {
     line-height: 22px;
 }
 
-/* main {
-    margin: 9.625em 1.5em;
-} */
-
-
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp 
 
 Might be useful ^
-*/
-
-
-/* https://cursos.alura.com.br/forum/topico-botao-radio-155239
-
-seems more useful ^
 */

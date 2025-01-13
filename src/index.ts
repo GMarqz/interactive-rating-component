@@ -4,7 +4,10 @@ const $form = document.getElementById("form") as HTMLFormElement;
 
 $form.addEventListener("submit", (e: Event) => {
     e.preventDefault();
-    console.log("Listening");
-    renderTYPage($form, 4);
-});
+    const $selectedValue = document.querySelector('input[type="radio"]:checked') as HTMLInputElement;
 
+    if($selectedValue) {
+        console.log(`You selected ${$selectedValue.value}`);
+    }
+    renderTYPage($form, $selectedValue.value);
+});

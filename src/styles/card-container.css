@@ -23,13 +23,12 @@ main {
 }
 
 .card {
-    /* width: 40%; */
-    max-width: 25.75rem;
-    /* height: 21.5rem; */
-    padding: 1.5rem;
+    width: 100%;
+    max-width: 20.438rem;
+    padding: 1.5rem 1rem 2rem 1rem;
     background: linear-gradient(#232A34, #181E27);
     border-radius: 0.938rem;
-    gap: 1.063rem;
+    gap: 1.5rem;
 }
 
 .card-body {
@@ -37,11 +36,18 @@ main {
     margin-bottom: 0.438rem;
 }
 
+.card-body-ty{
+    gap: 1.5rem;
+}
+
 .card-title {
     color: #fff;
     font-weight: 700;
-    /* font-size: calc(1.50rem + 3vw); */
     font-size: 1.75rem;
+}
+
+.card-body-ty-text {
+    font-size: 0.875rem;
 }
 
 .thank-you-card {
@@ -50,10 +56,49 @@ main {
 }
 
 .rate-value-container {
-    /* max-width: 10.5rem; */
     padding: 0.313rem 0.75rem;
     border-radius: 22.5px;
     background-color: var(--dark-blue);
     color: var(--orange);
     font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .card {
+        max-width: 25.75rem;
+        padding: 1.8rem;
+        border-radius: 1.875rem;
+    }
+
+    .icon-star-container {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .icon-star {
+        width: 16.75px;
+        height: 16px;
+    }
+
+    .card-body {
+        padding-left: 0.538rem;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+    }
+
+    .card-text {
+        line-height: 1.5rem;
+    }
+
+    .card-body-ty {
+        padding: 0.813rem 0.813rem 0.813rem 0;
+        gap: 2rem;
+    }
+
+    .card-body-ty-text {
+        font-size: 0.938rem;
+    }
 }

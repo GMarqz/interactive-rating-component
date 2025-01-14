@@ -7,12 +7,12 @@ Useful resource ^
 .form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.5rem;
 }
 
 .fieldset {
     width: 100%;
-    /* max-width: 17.563rem; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -68,12 +68,12 @@ label {
 }
 
 input[type="radio"]:checked +  label{
-    background-color: var(--white);
+    background-color: var(--orange);
     color: var(--dark-blue);
 }
 
 label:hover {
-    background-color: var(--orange);
+    background-color: var(--white);
     color: var(--dark-blue);
 }
 
@@ -84,8 +84,7 @@ label:hover {
     }
 
     .submit-btn {
-        width: 341px;
+        width: 21.313rem;
         line-height: 18.99px;
-        
     }
 }

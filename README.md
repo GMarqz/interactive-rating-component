@@ -32,7 +32,7 @@ Users should be able to:
 
 ### 🔗 Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-using-mobile-first-workflow-and-ts-Xc1RIJKMUP)
 - Live Site URL: [Vercel](https://interactive-rating-component-gamma-eight.vercel.app)
 
 ## My process

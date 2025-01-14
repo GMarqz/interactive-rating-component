@@ -13,19 +13,11 @@ main {
     max-width: 100%;
 }
 
-.thank-you-img-container {
-    max-width: 9rem;
-    max-height: 6rem;
-}
-
-.thank-you-img {
-    width: 100%;
-}
-
 .card {
     width: 100%;
     max-width: 20.438rem;
     padding: 1.5rem 1rem 2rem 1rem;
+
     background: linear-gradient(#232A34, #181E27);
     border-radius: 0.938rem;
     gap: 1.5rem;
@@ -36,23 +28,33 @@ main {
     margin-bottom: 0.438rem;
 }
 
-.card-body-ty{
-    gap: 1.5rem;
-}
-
 .card-title {
     color: #fff;
     font-weight: 700;
     font-size: 1.75rem;
-}
-
-.card-body-ty-text {
-    font-size: 0.875rem;
+    line-height: 1.899rem;
 }
 
 .thank-you-card {
     padding: 2.125rem 1.5rem 2.313rem 1.5rem;
     gap: 2rem;
+}
+
+.card-body-ty{
+    gap: 1.5rem;
+}
+
+.thank-you-img-container {
+    max-width: 9rem;
+    max-height: 6rem;
+}
+
+.thank-you-img {
+    width: 100%;
+}
+
+.card-body-ty-text {
+    font-size: 0.875rem;
 }
 
 .rate-value-container {
@@ -66,7 +68,7 @@ main {
 @media screen and (min-width: 1440px) {
     .card {
         max-width: 25.75rem;
-        padding: 1.8rem;
+        padding: 2rem;
         border-radius: 1.875rem;
     }
 
@@ -77,8 +79,8 @@ main {
     }
 
     .icon-star {
-        width: 16.75px;
-        height: 16px;
+        width: 1.047rem;
+        height: 1rem;
     }
 
     .card-body {
